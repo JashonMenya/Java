@@ -6,7 +6,7 @@ import com.example.math.MathUtils;
  * This class demonstrates basic arithmetic operations using the MathUtils
  * class.
  */
-public class ClientApp {
+public final class ClientApp {
     private ClientApp() {
         // Private constructor to prevent instantiation
     }

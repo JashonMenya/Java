@@ -1,5 +1,8 @@
 package com.example.math;
 
+/**
+ * This class provides utility methods for mathematical operations.
+ */
 public final class MathUtils {
 
     private MathUtils() {
