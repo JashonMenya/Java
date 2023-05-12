@@ -3,13 +3,16 @@ package com.example.client;
 import com.example.math.MathUtils;
 
 public class ClientApp {
+    /**
+     * Main Program
+     * @param args
+     */
     public static void main(String[] args) {
-
         // Addition
         int addition = MathUtils.add(2, 2);
         System.out.println("Results: " + addition);
 
-        //Subtraction
+        // Subtraction
         int subtraction = MathUtils.subtract(8, 4);
         System.out.println("Results: " + subtraction);
 
