@@ -6,7 +6,8 @@ package com.example.math;
 public final class MathUtils {
 
     private MathUtils() {
-        throw new UnsupportedOperationException("MathUtils class cannot be instantiated.");
+        throw new UnsupportedOperationException(
+                "MathUtils class cannot be instantiated.");
     }
 
     /**
