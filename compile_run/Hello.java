@@ -1,4 +1,4 @@
-public class Hello {
+public final class Hello {
     private Hello() {
         // Private constructor to prevent instantiation
         throw new UnsupportedOperationException();
