@@ -28,7 +28,7 @@ java --module-path out --module client/com.example.client.ClientApp
 
 ### Setting up A Java Development Environment
 
-#### Need to:
+#### Need to
 
 - Install a Java Development Kit (JDK)
 - Install an Integrated Development Environment (IDE)
