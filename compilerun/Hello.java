@@ -1,3 +1,4 @@
+package compilerun;
 public final class Hello {
     private Hello() {
         // Private constructor to prevent instantiation

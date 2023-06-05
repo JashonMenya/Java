@@ -45,3 +45,12 @@ javac filename.java
 ```cmd
 java filename
 ```
+
+## Java Class
+
+Building block of a java application
+
+Consists of:
+
+- Class name - Begins with a capital letter
+- Body of the class surrounded with braces {}

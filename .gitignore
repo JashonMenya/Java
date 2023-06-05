@@ -29,3 +29,6 @@ replay_pid*
 file structure;
 module_math_app/client/module-info.java
 module_math_app/core/module-info.java
+
+
+*.metadata
