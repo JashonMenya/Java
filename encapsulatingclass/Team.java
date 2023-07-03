@@ -10,12 +10,12 @@ public final class Team {
     /**
      * Constructs a Team object with the given team name and an array of players.
      *
-     * @param teamName    The team's name.
-     * @param playerArray An array of players in the team.
+     * @param teamName The team's name.
+     * @param players  An array of players in the team.
      */
-    public Team(final String teamName, final Player[] playerArray) {
+    public Team(final String teamName, final Player[] players) {
         this.teamName = teamName;
-        this.playerArray = playerArray;
+        this.playerArray = players;
     }
 
     /**
@@ -30,10 +30,10 @@ public final class Team {
     /**
      * Sets the array of players in the team.
      *
-     * @param playerArray An array of players to set in the team.
+     * @param players An array of players to set in the team.
      */
-    public void setPlayerArray(final Player[] playerArray) {
-        this.playerArray = playerArray;
+    public void setPlayerArray(final Player[] players) {
+        this.playerArray = players;
     }
 
     /**
