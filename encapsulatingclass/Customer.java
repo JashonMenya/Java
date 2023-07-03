@@ -13,7 +13,7 @@ public final class Customer {
      * @param name The customer's name.
      * @param ssn  The customer's social security number.
      */
-    public Customer(String name, String ssn) {
+    public Customer(final String name, final String ssn) {
         this.name = name;
         this.ssn = ssn;
     }

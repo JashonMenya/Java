@@ -3,19 +3,23 @@ package encapsulatingclass;
 /**
  * This class represents a player of the game.
  */
-public class Player {
+public final class Player {
 
-    private String playerName;
+    private final String playerName;
 
-    /*
-     * Add a constructor that takes a name.
+    /**
+     * Constructs a Player object with the given name.
+     *
+     * @param playerName The player's name.
      */
-    public Player(String n) {
-        playerName = n;
+    public Player(final String playerName) {
+        this.playerName = playerName;
     }
 
-    /*
-     * Add a method that returns the player's name.
+    /**
+     * Returns the player's name.
+     *
+     * @return The player's name.
      */
     public String getPlayerName() {
         return playerName;
