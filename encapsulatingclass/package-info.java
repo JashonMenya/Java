@@ -1,4 +1,4 @@
 /**
  * This package contains the classes for purposes of learning encapsulation.
  */
-package encapsulating_class;
+package encapsulatingclass;

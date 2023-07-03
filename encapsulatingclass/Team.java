@@ -1,4 +1,4 @@
-package encapsulating_class;
+package encapsulatingclass;
 
 /**
  * This class represents a team of players.
