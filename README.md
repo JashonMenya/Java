@@ -16,6 +16,13 @@ javac -d out --module-source-path . $(find . -name "*.java")
 java --module-path out --module client/com.example.client.ClientApp
 ```
 
+or
+
+```
+java -cp out conditionsandarrays.ifstatement.Main
+
+```
+
 ### Intro To Java
 
 - Key Features
@@ -72,10 +79,25 @@ Allows you to
 - Keep the implementation separate from the public interface
 
 ### Access Modifiers
+
 - public - Accessible by anyone
 - private - Accessible only within the class
 
 ### Encapsulation
+
 - Means hiding object fields using access controls
   - Safe access is provided using getter and setter methods
   - You can use code in setter methods to ensure that values are valid
+
+## Conditions And Arrays
+
+If and else statement
+
+```
+if (<some condition is true>) {
+  //do something
+}
+else {
+  //do something different
+}
+```
