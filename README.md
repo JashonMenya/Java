@@ -101,3 +101,18 @@ else {
   //do something different
 }
 ```
+
+Declaring Arrays
+
+- Systax
+
+```
+  type[] arrayIdentifier = {commma-separated list of values};
+```
+
+Example
+
+```
+  String[] names = {"Mary", "Bob", "JJ"};
+  int[] ages = {25,27,48};
+```
