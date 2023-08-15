@@ -6,7 +6,16 @@ import java.util.Scanner;
  * This class demonstrates the use of if statements in Java.
  */
 public class Main {
-    public static void main(String[] args) {
+    private Main() {
+        // Private constructor to prevent instantiation
+    }
+
+    /**
+     * This method is the main entry point for the application.
+     *
+     * @param args The command-line arguments.
+     */
+    public static void main(final String[] args) {
         final String customerName = "JJ";
         String itemDesc = "Shirt";
         final double price = 21.99;
@@ -19,7 +28,8 @@ public class Main {
 
         scanner.close();
 
-        String message = customerName + " wants to purchase " + quantity + " " + itemDesc;
+        String message = customerName + " wants to purchase " + quantity
+                + " " + itemDesc;
         final double total = (price * quantity) * tax;
 
         if (quantity > 1) {
