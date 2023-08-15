@@ -3,14 +3,14 @@ package conditionsandarrays.ifstatement;
 import java.util.Scanner;
 
 /**
- * Main class for if statement example.
+ * This class demonstrates the use of if statements in Java.
  */
 public class Main {
     public static void main(String[] args) {
-        final String customerName = "JJ"; // Variable names should start with lowercase letters
+        final String customerName = "JJ";
         String itemDesc = "Shirt";
         final double price = 21.99;
-        final int quantity = 4; // Variable names should be in lowercase
+        final int quantity = 4;
         final double tax = 1.04;
         Scanner scanner = new Scanner(System.in);
 
