@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * This class demonstrates the use of if statements in Java.
  */
-public class Main {
+final public class Main {
     private Main() {
         // Private constructor to prevent instantiation
     }
