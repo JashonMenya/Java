@@ -100,7 +100,7 @@ Java's combination of platform independence, object-oriented design, modularity,
 
 Setting up a Java development environment is the first step in building Java applications. Here are the essential steps you need to follow:
 
-#### Need to
+### Need to
 
 1. **Install a Java Development Kit (JDK):**
 
