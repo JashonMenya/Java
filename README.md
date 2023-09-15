@@ -50,22 +50,20 @@ The compilation process involves translating your Java source code into bytecode
 
 ### Compiling Code - Generates the 'out' Directory
 
-
 ```shell
 javac -d out --module-source-path . $(find . -name "*.java")
 ```
 
 ### Running the compiled code
 
-```cmd
+```shell
 java --module-path out --module client/com.example.client.ClientApp
 ```
 
 or
 
-```
+```shell
 java -cp out conditionsandarrays.ifstatement.Main
-
 ```
 
 ## Key-Features
