@@ -39,6 +39,9 @@ Java is a widely-used programming language known for its robust and versatile na
     - [While Loop](#while-loop)
     - [For Loop](#for-loop)
     - [Comparing Loop Constructs](#comparing-loop-constructs)
+    - [Nesting Loops](#nesting-loops)
+      - [Nesting for Loop](#nested-for-loops)
+      - [Combining Loop Types](#combining-loop-types)
 
 ## Java intro
 
@@ -104,11 +107,11 @@ Setting up a Java development environment is the first step in building Java app
 
 1. **Install a Java Development Kit (JDK):**
 
-   - The Java Development Kit (JDK) is required to compile and run Java applications. Download and install the appropriate JDK version for your operating system from the official Oracle or OpenJDK website.
+   - The Java Development Kit (JDK) is required to compile and run Java applications. Download and install the appropriate JDK version for your operating system from the official Oracle or OpenJDK site.
 
 2. **Install an Integrated Development Environment (IDE):**
 
-   - While you can write Java code using a simple text editor and compile it using the command line, using an Integrated Development Environment (IDE) greatly enhances your productivity. Some popular Java IDEs include Eclipse, IntelliJ IDEA, and NetBeans. Install your preferred IDE and configure it for Java development.
+   - While you can write Java code using a simple text editor and compile it using the command-line, using an Integrated Development Environment (IDE) greatly enhances your productivity. Some popular Java IDEs include Eclipse, IntelliJ IDEA, and NetBeans. Install your preferred IDE and configure it for Java development.
 
 3. **Configure the Environment Variables:**
    - After installing the JDK, you may need to configure environment variables to ensure that your system recognizes the Java installation. On Windows, you should set the `JAVA_HOME` and add the `bin` directory to the `PATH` variable. On Unix-based systems (Linux and macOS), you can set environment variables in your shell profile (e.g., `.bashrc` or `.zshrc`).
@@ -311,3 +314,52 @@ Different loop constructs have specific use cases:
 - Use the `do-while` loop to iterate through statements indefinitely, ensuring at least one execution of the block of code.
 
 Understanding these loop constructs is crucial for controlling program flow and working with arrays and collections of data in Java.
+
+### Nesting Loops
+
+Nesting loops in Java involves placing one loop inside another loop. This technique is used to create more complex and structured iterations, especially when dealing with multi-dimensional data structures like arrays or matrices. Java allows you to nest loops of the same type (e.g., `for` inside `for`) or different types (e.g., `for` inside `while`).
+
+#### Nested `for` Loops
+
+One of the most common scenarios for nesting loops is with nested `for` loops. This is often used when dealing with two-dimensional data structures or grids. Here's an example of nesting `for` loops to iterate through a 2D array:
+
+```java
+int[][] grid = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};
+
+for (int i = 0; i < grid.length; i++) {
+    for (int j = 0; j < grid[i].length; j++) {
+        System.out.print(grid[i][j] + " ");
+    }
+    System.out.println(); // Move to the next row
+}
+```
+
+#### Nested while Loops
+
+You can also nest while loops in a similar way. Here's an example:
+
+```java
+int i = 1;
+while (i <= 3) {
+    int j = 1;
+    while (j <= 3) {
+        System.out.println("i = " + i + ", j = " + j);
+        j++;
+    }
+    i++;
+}
+```
+
+In this example, the outer `while loop` controls the variable `i`, and the inner while loop controls the variable `j`. This results in a nested iteration, printing combinations of i and j.
+
+#### Combining Loop Types
+
+It's also possible to nest loops of different types. For instance, you can nest a for loop inside a while loop or vice versa, depending on your specific requirements.
+
+When nesting loops, it's essential to be mindful of the loop termination conditions, so you don't inadvertently create infinite loops. Nested loops can be a powerful tool for solving a wide range of problems, but they should be used judiciously to maintain code readability and performance.
+
+Nesting loops can help you process multi-dimensional data structures, traverse grids, and perform repetitive tasks efficiently in your Java programs.
