@@ -1,8 +1,10 @@
-# Java Programming
+# Java
+
+Java is a widely-used programming language known for its robust and versatile nature.
 
 ## Table of Contents
 
-- [Java](#java-basics)
+- [Java Intro](#java-intro)
 
   - [Module](#module)
 
@@ -38,13 +40,16 @@
     - [For Loop](#for-loop)
     - [Comparing Loop Constructs](#comparing-loop-constructs)
 
-# Java
-
-Java is a widely-used programming language known for its robust and versatile nature.
+## Java intro
 
 ## Module
 
+A module is a feature introduced in Java 9 to enhance the modularity of the Java platform. It allows you to encapsulate code, resources, and dependencies into a self-contained unit, making it easier to manage and maintain large Java applications.
+
+The compilation process involves translating your Java source code into bytecode while taking module-related considerations into account. Here's how the compilation process works with Java modules:
+
 ### Compiling Code - Generates the 'out' Directory
+
 
 ```shell
 javac -d out --module-source-path . $(find . -name "*.java")
