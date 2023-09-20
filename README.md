@@ -377,11 +377,11 @@ Nesting loops can help you process multi-dimensional data structures, traverse g
 
 Client-server architecture is a fundamental design pattern in computer networking that defines the roles and interactions of two distinct types of programs or devices: clients and servers. This architectural model is widely used in various computing applications, including web services, email systems, online gaming, and more.
 
-### Key Components:
+### Key Components
 
 #### 1. Client
 
-A client is a program or device that requests services or resources from a server. Clients are typically end-user devices, such as computers, smartphones, or tablets. They are responsible for:
+A client is a program or device that requests services or resources from a server. Clients are typically end user devices, such as computers, mobile phones, or tablets. They are responsible for:
 
 - Sending requests to the server.
 - Receiving responses from the server.
@@ -399,7 +399,7 @@ A server is a program or device that provides services or resources to clients. 
 
 Servers host various services, such as web servers, email servers, database servers, and more. Each server specializes in handling specific types of requests.
 
-### How Client-Server Architecture Works:
+### How Client-Server Architecture Works
 
 1. **Client Request:** A client initiates communication by sending a request to a server. The request specifies the type of service or data it needs.
 
@@ -409,7 +409,7 @@ Servers host various services, such as web servers, email servers, database serv
 
 4. **Client Processing:** The client receives the response and processes the data, which may involve rendering a web page, displaying an email, or performing other actions based on the received information.
 
-### Advantages of Client-Server Architecture:
+### Advantages of Client-Server Architecture
 
 - **Scalability:** Servers can handle multiple client requests simultaneously, making it easy to scale the system as the number of clients grows.
 
@@ -421,9 +421,9 @@ Servers host various services, such as web servers, email servers, database serv
 
 - **Flexibility:** Different clients (e.g., web browsers, mobile apps, desktop applications) can interact with the same server, providing cross-platform compatibility.
 
-### Use Cases:
+### Use Cases
 
-- **Web Applications:** Websites often use client-server architecture, with web browsers (clients) communicating with web servers to retrieve web pages and content.
+- **Web Applications:** Sites often use client-server architecture, with web browsers (clients) communicating with web servers to retrieve web pages and content.
 
 - **Email Systems:** Email clients (e.g., Outlook, Gmail) communicate with email servers to send, receive, and store email messages.
 
