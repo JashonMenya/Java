@@ -45,12 +45,25 @@ Java is a widely-used programming language known for its robust and versatile na
       - [Combining Loop Types](#combining-loop-types)
 
   - [Client-Server Architecture](#client-server-architecture)
+
     - [Key Components:](#key-components)
       - [1. Client](#1-client)
       - [2. Server](#2-server)
     - [How Client-Server Architecture Works:](#how-client-server-architecture-works)
     - [Advantages of Client-Server Architecture:](#advantages-of-client-server-architecture)
     - [Use Cases:](#use-cases)
+
+  - [Java Strings](#java-strings)
+
+    - [What is a String?](#what-is-a-string)
+    - [Immutability](#immutability)
+    - [Common Methods](#common-methods)
+
+  - [StringBuilder Class](#stringbuilder-class)
+    - [Why Use StringBuilder?](#why-use-stringbuilder)
+    - [Creating a StringBuilder](#creating-a-stringbuilder)
+    - [Common Methods](#common-methods-1)
+    - [Conclusion](#conclusion)
 
 ## Java intro
 
@@ -432,3 +445,84 @@ Servers host various services, such as web servers, email servers, database serv
 - **Cloud Computing:** Cloud services use client-server models to provide resources and data storage to remote clients.
 
 Client-server architecture is a versatile and widely adopted model that underlies many of the applications and services we use daily, enabling efficient and distributed computing across networks.
+
+### What is a String?
+
+In Java, a `String` is an object that represents a sequence of characters. It is one of the most commonly used data types in Java.
+
+Example:
+
+```java
+String hello = "Hello, World!";
+```
+
+### Immutability
+
+Strings in Java are immutable, meaning once they are created, they cannot be altered. When you perform operations like concatenation or trimming, a new String object is created.
+
+### Common Methods
+
+Here are some of the commonly used methods:
+
+`length()`:Returns the length of the string.
+
+`charAt(int index)`: Returns the character at the specified index.
+
+`substring(int beginIndex, int endIndex)`: Returns a new string that is a substring of the original string.
+
+`toLowerCase():` Converts the string to lowercase.
+
+`toUpperCase()`: Converts the string to uppercase.
+
+`trim()`: Removes leading and trailing white spaces.
+
+`startsWith(String prefix)`: Checks if the string starts with the specified prefix.
+
+`endsWith(String suffix)`: Checks if the string ends with the specified suffix.
+
+## StringBuilder Class
+
+The `StringBuilder` class in Java is used to create mutable (modifiable) strings. Unlike Java strings, which are immutable, a `StringBuilder` object can be altered as many times as needed without creating a new object.
+
+### Why Use StringBuilder?
+
+1. **Efficiency**: It is more memory-efficient and faster when you have to make multiple modifications to a string.
+2. **API Methods**: Provides an API compatible with `String`, but with extra functionality for manipulation.
+
+### Creating a StringBuilder
+
+You can create a `StringBuilder` object using its constructors.
+
+```java
+StringBuilder sb = new StringBuilder(); // Empty StringBuilder
+StringBuilder sbWithInitialCapacity = new StringBuilder(50); // With initial capacity
+StringBuilder sbWithString = new StringBuilder("Hello"); // With initial content
+```
+
+### Common Methods
+
+Here are some commonly used methods:
+
+`append(...)`: Appends the given data type to the existing string.
+
+`insert(int offset, ...)`: Inserts the given data type at the specified position.
+
+`delete(int start, int end)`: Deletes the substring from the start index to the end index.
+
+`reverse():` Reverses the characters of the StringBuilder.
+
+`toString():` Converts the mutable StringBuilder to an immutable String.
+Examples
+
+```java
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World"); // "Hello World"
+sb.insert(0, "Greetings, "); // "Greetings, Hello World"
+sb.delete(0, 10); // "Hello World"
+sb.reverse(); // "dlroW olleH"
+String str = sb.toString(); // Converts to String, "dlroW olleH"
+```
+
+### Conclusion
+
+The StringBuilder class is especially useful when you need to make multiple modifications to a string. It is faster and more memory-efficient than using immutable String objects for the same purpose.
