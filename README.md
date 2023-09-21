@@ -62,7 +62,7 @@ Java is a widely-used programming language known for its robust and versatile na
   - [StringBuilder Class](#stringbuilder-class)
     - [Why Use StringBuilder?](#why-use-stringbuilder)
     - [Creating a StringBuilder](#creating-a-stringbuilder)
-    - [Common Methods](#common-methods-1)
+    - [Common StringBuilder Methods](#common-stringbuilder-methods)
     - [Conclusion](#conclusion)
 
 ## Java intro
@@ -446,6 +446,10 @@ Servers host various services, such as web servers, email servers, database serv
 
 Client-server architecture is a versatile and widely adopted model that underlies many of the applications and services we use daily, enabling efficient and distributed computing across networks.
 
+## Java Strings
+
+Java strings are sequences of characters (such as letters, numbers, punctuation, etc.) that are treated as a single unit. In Java, strings are represented by the String class, which is part of the standard Java library.
+
 ### What is a String?
 
 In Java, a `String` is an object that represents a sequence of characters. It is one of the most commonly used data types in Java.
@@ -499,7 +503,7 @@ StringBuilder sbWithInitialCapacity = new StringBuilder(50); // With initial cap
 StringBuilder sbWithString = new StringBuilder("Hello"); // With initial content
 ```
 
-### Common Methods
+### Common StringBuilder Methods
 
 Here are some commonly used methods:
 
