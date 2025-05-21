@@ -27,3 +27,4 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: "dev"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CHECKSTYLE_CONFIG_FILE: .checkstyle.xml
