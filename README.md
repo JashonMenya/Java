@@ -530,3 +530,17 @@ String str = sb.toString(); // Converts to String, "dlroW olleH"
 ### Conclusion
 
 The StringBuilder class is especially useful when you need to make multiple modifications to a string. It is faster and more memory-efficient than using immutable String objects for the same purpose.
+
+
+-- resume
+
+1. Resume Team 
+2. Marketing Team 
+3. Compliance Team
+
+-- agreement (11 % annual salary)
+
+after job offer
+after first monthly salary
+after second monthly salary
+afte  third monthly salary
