@@ -30,7 +30,7 @@ public class CollectUserInfo {
         String password = "";
         if (console != null) {
             char[] passwordCharacters = console.readPassword("Enter your password: ");
-            password= new String(passwordCharacters);
+            password = new String(passwordCharacters);
             System.out.println("console statement");
         }
         return password;
@@ -52,9 +52,6 @@ public class CollectUserInfo {
         }
 
         String password = getuserPassword();
-
-
-
 
         return new User(firstName, lastName, email, password);
 
