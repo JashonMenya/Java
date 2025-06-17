@@ -1,6 +1,6 @@
 package refresher_exercises;
 
-public class Arrays {
+public class ArraysRefresher {
     public static void main(String[] args) {
         int[] evenNumbers = { 2, 4, 6, 8, 10 };
         findElementPosition(evenNumbers, 4);
