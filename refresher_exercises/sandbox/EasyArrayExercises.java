@@ -82,4 +82,62 @@ public class EasyArrayExercises {
         return thirdLargest;
     }
 
+    /**
+     *
+     * Given an integer array, find a maximum product of a triplet in the array.
+     *
+     * Examples:
+     *
+     * Input: arr[ ] = [10, 3, 5, 6, 20]
+     * Output: 1200
+     * Explanation: Multiplication of 10, 6 and 20
+     *
+     * Input: arr[ ] = [-10, -3, -5, -6, -20]
+     * Output: -90
+     *
+     * Input: arr[ ] = [1, -4, 3, -6, 7, 0]
+     * Output: 168
+     *
+     */
+
+    public int maximumProductOfTriplet() {
+        int[] numbers = { 1, -4, 3, -6, 7, 0 };
+        // assign/get the 3 largest numbers
+        int max1 = Integer.MIN_VALUE;
+        int max2 = Integer.MIN_VALUE;
+        int max3 = Integer.MIN_VALUE;
+
+        // assign/get 2 lowest numbers( in case of 2 negative numbers needed for product
+        int min1 = Integer.MAX_VALUE;
+        int min2 = Integer.MAX_VALUE;
+
+        for (int number : numbers) {
+            // largest number
+            if (number > max1) {
+                max3 = max2;
+                max2 = max1;
+                max1 = number;
+            }
+            // second largest
+            else if (number > max2) {
+                max3 = max2;
+                max2 = number;
+            } else if (number > max3) {
+                max3 = number;
+            }
+
+            if (number < min1) {
+                min2 = min1;
+                min1 = number;
+            } else if (number < min2) {
+                min2 = number;
+            }
+        }
+
+        int allPositiveReturn = max1 * max2 * max3;
+        int negativesIncluded = (min1 * min2) * max1;
+
+        return Math.max(allPositiveReturn, negativesIncluded);
+    }
+
 }
