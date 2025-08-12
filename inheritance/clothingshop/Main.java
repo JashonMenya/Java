@@ -1,7 +1,7 @@
 package inheritance.clothingshop;
 
 /**
- * Main class.
+ * MainUserInteraction class.
  */
 public final class Main {
 
@@ -27,7 +27,7 @@ public final class Main {
     private static final char SHIRT_SIZE = 'M';
 
     /**
-     * Private constructor to prevent instantiation of the Main class.
+     * Private constructor to prevent instantiation of the MainUserInteraction class.
      */
     private Main() {
         // This class should not be instantiated.
