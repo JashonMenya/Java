@@ -1,4 +1,4 @@
 /**
- * Custom objects with Array List.
+ * Custom objects with Array Lists.
  */
 package collectionsinjava.customobjects;

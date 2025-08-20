@@ -23,7 +23,7 @@ public final class MyList {
         List arrayList = new ArrayList();
         System.out.println("ArrayList class: " + arrayList.getClass());
 
-        System.out.println("ArrayList instance List: "
+        System.out.println("ArrayList instance Lists: "
                 + (arrayList instanceof List));
         System.out.println("ArrayList instance Collection: "
                 + (arrayList instanceof Collection));
